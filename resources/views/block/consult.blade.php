@@ -1,0 +1,17 @@
+{{-- <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2><ya-tr-span data-index="5-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Change the background" data-translation="Изменить фон" data-ch="0" data-type="trSpan" style="visibility: initial !important;">Изменить фон</ya-tr-span></h2>
+          <p><ya-tr-span data-index="6-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. " data-translation="Поменяйте местами утилиту для определения цвета фона и добавьте утилиту для определения цвета `.text- *`, чтобы изменить внешний вид jumbotron. " data-ch="0" data-type="trSpan" style="visibility: initial !important;">Поменяйте местами утилиту для определения цвета фона и добавьте утилиту для определения цвета `.text- *`, чтобы изменить внешний вид jumbotron. </ya-tr-span><ya-tr-span data-index="6-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Then, mix and match with additional component themes and more." data-translation="Затем смешайте и сочетайте с дополнительными темами компонентов и многим другим." data-ch="0" data-type="trSpan" style="visibility: initial !important;">Затем смешайте и сочетайте с дополнительными темами компонентов и многим другим.</ya-tr-span></p>
+          <button class="btn btn-outline-light" type="button">Кнопка примера</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h2><ya-tr-span data-index="7-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Add borders" data-translation="Добавление границ" data-ch="0" data-type="trSpan" style="visibility: initial !important;">Добавление границ</ya-tr-span></h2>
+          <p><ya-tr-span data-index="8-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Or, keep it light and add a border for some added definition to the boundaries of your content. " data-translation="Или сделайте это проще и добавьте рамку для некоторого дополнительного определения границ вашего контента. " data-ch="0" data-type="trSpan" style="visibility: initial !important;">Или сделайте это проще и добавьте рамку для некоторого дополнительного определения границ вашего контента. </ya-tr-span><ya-tr-span data-index="8-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height." data-translation="Обязательно ознакомьтесь с исходным HTML-кодом, поскольку мы настроили выравнивание и размер содержимого обоих столбцов на одинаковую высоту." data-ch="0" data-type="trSpan" style="visibility: initial !important;">Обязательно ознакомьтесь с исходным HTML-кодом, поскольку мы настроили выравнивание и размер содержимого обоих столбцов на одинаковую высоту.</ya-tr-span></p>
+          <button class="btn btn-outline-secondary" type="button">Кнопка примера</button>
+        </div>
+      </div>
+</div> --}}
+2
