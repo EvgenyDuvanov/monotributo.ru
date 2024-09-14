@@ -44,10 +44,10 @@
     </section>
 </div>
 
-<div class="p-4">
+{{-- <div class="p-4">
     <section class="fade-in-section">
         @include('block.yandex')
     </section>
-</div>
+</div> --}}
 
 @endsection
