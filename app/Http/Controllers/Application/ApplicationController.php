@@ -10,11 +10,6 @@ use Illuminate\Support\Facades\Notification;
 
 class ApplicationController extends Controller
 {
-    // public function create()
-    // {
-    //     return view('applications.create');
-    // }
-
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -28,11 +23,11 @@ class ApplicationController extends Controller
             'name' => $validatedData['name'],
             'email' => $validatedData['email'],
             'phone' => $validatedData['phone'],
-            'status' => Application::STATUS_NEW, // Установка статуса "Новый" по умолчанию
+            'status' => Application::STATUS_NEW,
             'comment' => $request->input('comment', null),
         ]);
 
-        Notification::route('mail', 'monotributo.ru@gmail.com') // Email администратора
+        Notification::route('mail', 'monotributo.ru@gmail.com')
                     ->notify(new NewApplicationNotification($application));
         
         return redirect()->back()->with('success', 'Ваша заявка успешно отправлена, скоро мы свяжемся с вами!');

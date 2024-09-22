@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('combos', function (Blueprint $table) {
             $table->id();
-            $table->string('name'); // Название
-            $table->decimal('price', 8, 2); // Прайс с двумя знаками после запятой
-            $table->text('info'); // Инфо о пакете (услуги)
-            $table->timestamps(); // Время создания и обновления записи
+            $table->string('name');
+            $table->decimal('price', 8, 2);
+            $table->text('info');
+            $table->timestamps();
         });
     }
 
