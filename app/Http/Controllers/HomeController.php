@@ -15,7 +15,7 @@ class HomeController extends Controller
     {
         $services = Service::take(6)->get();
         $contacts = Contacts::all();
-        $reviews = Review::where('status', 'published')->inRandomOrder()->take(3)->get();
+        $reviews = Review::where('status', 'published')->inRandomOrder()->take(4)->get();
         $advantages = Advantage::all();
         $combos = Combo::all();
 
