@@ -19,8 +19,8 @@ Route::prefix('admin')->group(function () {
     Route::get('/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
     Route::post('/login', [AdminAuthController::class, 'login'])->name('admin.login.submit');
 
-    Route::get('/register', [AdminAuthController::class, 'showRegistrationForm'])->name('admin.register');
-    Route::post('/register', [AdminAuthController::class, 'register'])->name('admin.register.submit');
+    // Route::get('/register', [AdminAuthController::class, 'showRegistrationForm'])->name('admin.register');
+    // Route::post('/register', [AdminAuthController::class, 'register'])->name('admin.register.submit');
 
     Route::post('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
 });

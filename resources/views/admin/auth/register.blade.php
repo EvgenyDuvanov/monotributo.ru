@@ -1,4 +1,4 @@
-@extends('layouts.login')
+{{-- @extends('layouts.login')
 
 @section('content')
 
@@ -28,4 +28,4 @@
     </div>
 </div>
 
-@endsection
+@endsection --}}
