@@ -16,7 +16,7 @@ class ApplicationController extends Controller
             'name' => 'required|string|max:30',
             'email' => 'required|email|max:40',
             'phone' => 'required|string|max:25',
-            'comment' => 'nullable|string|max:500',
+            // 'comment' => 'nullable|string|max:500',
         ]);
 
         $application = Application::create([
@@ -24,7 +24,7 @@ class ApplicationController extends Controller
             'email' => $validatedData['email'],
             'phone' => $validatedData['phone'],
             'status' => Application::STATUS_NEW,
-            'comment' => $request->input('comment', null),
+            // 'comment' => $request->input('comment', null),
         ]);
 
         Notification::route('mail', 'monotributo.ru@gmail.com')
