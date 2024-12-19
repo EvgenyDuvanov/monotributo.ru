@@ -11,6 +11,6 @@
         <div class="input-group mt-2">
             <input type="text" id="phone" name="phone" class="form-control" placeholder="Номер телефона" required>
         </div>
-        <button type="submit" class="btn mt-3" style="background-color: #0dbdfd; color: white; font-size: 1rem; border-radius: 0.25rem; border: none; padding: 0.5rem 1rem; text-align: center;">Отправить заявку</button>
+        <button type="submit" class="btn mt-3" style="background-color: #0dbdfd; color: white; font-size: 1rem; border-radius: 1.5rem; border: none; padding: 0.5rem 1rem; text-align: center;">Отправить заявку</button>
     </form>
 </div>

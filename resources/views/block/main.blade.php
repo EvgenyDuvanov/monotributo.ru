@@ -17,11 +17,11 @@
                 </p>
                 
                 <div class="d-flex align-items-center mt-4">
-                    <a href="/#contacts" class="btn me-3" data-bs-toggle="modal" data-bs-target="#startModal" style="background-color: #0dbdfd; color: white; font-size: 1rem; border-radius: 0.25rem; border: none; padding: 0.5rem 1rem; text-align: center;">
-                        НАЧАТЬ
+                    <a href="/#contacts" class="btn me-3" data-bs-toggle="modal" data-bs-target="#startModal" style="background-color: #0dbdfd; color: white; font-size: 1rem; border-radius: 1.5rem; border: none; padding: 0.5rem 1rem; text-align: center;">
+                        НАЧАТЬ!
                     </a>
 
-                    <a href="/#combo" style="font-size: 1rem; color: #0dbdfd; text-decoration: underline;">
+                    <a href="/#combo" class="btn" style="background-color: transparent; color: #0dbdfd; font-size: 1rem; border-radius: 1.5rem; border: 2px solid #0dbdfd; padding: 0.5rem 1rem; text-align: center;">
                         Комплексные пакеты
                     </a>
                 </div>
