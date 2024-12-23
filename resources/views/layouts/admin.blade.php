@@ -21,5 +21,32 @@
 
         @include('admin.includes.footer')
     </div>
+
+    <style>
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(218, 222, 223, 0.909);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 5rem;
+            color: #53bde0;
+            margin-bottom: 1rem;
+        }
+        .service-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+    <style>
 </body>
 </html>
