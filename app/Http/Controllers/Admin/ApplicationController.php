@@ -11,10 +11,12 @@ class ApplicationController extends Controller
 {
     public function index()
     {
-        $applications = Application::paginate(15);
+        $applications = Application::orderBy('created_at', 'desc')->paginate(15);
         $statuses = Application::getStatuses();
+        
         return view('admin.applications.index', compact('applications', 'statuses'));
     }
+
 
     public function edit($id)
     {
