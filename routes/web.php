@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ApplicationController as AdminApplicationController;
 use App\Http\Controllers\Admin\ComboController;
+use App\Http\Controllers\Admin\ReviewController as AdminReviewController;
 use App\Http\Controllers\Application\ApplicationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Review\ReviewController;
@@ -35,7 +36,12 @@ Route::middleware(['auth:admin'])->group(function () {
 
     // Управление отзывами
     Route::prefix('admin/reviews')->group(function () {
-        Route::get('/', [AdminController::class, 'indexReviews'])->name('admin.reviews');
+        Route::get('/', [AdminReviewController::class, 'index'])->name('admin.reviews');
+        Route::get('/create', [AdminReviewController::class, 'create'])->name('admin.reviews.create');
+        Route::post('/', [AdminReviewController::class, 'store'])->name('admin.reviews.store');
+        Route::get('/{review}/edit', [AdminReviewController::class, 'edit'])->name('admin.reviews.edit');
+        Route::put('/{review}', [AdminReviewController::class, 'update'])->name('admin.reviews.update');
+        Route::delete('/{review}', [AdminReviewController::class, 'destroy'])->name('admin.reviews.destroy');
     });
 
     Route::prefix('admin/combos')->group(function () {
