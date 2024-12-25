@@ -10,7 +10,7 @@ class ReviewController extends Controller
 {
     public function index()
     {
-        $reviews = Review::where('status', 'published')->get();
+        $reviews = Review::where('status', 'published')->paginate(15);
         $contacts = Contacts::all();
 
         return view('reviews.index', compact('reviews', 'contacts'));

@@ -22,6 +22,9 @@
                 </div>
             </div>
         @endforeach
+    {{-- <div class="d-flex justify-content-center mt-4">
+            {{ $reviews->onEachSide(1)->links('pagination::bootstrap-5') }}
+    </div> --}}
     </div>
     <div class="text-center mt-4">
         <a href="/#rewiew" class="btn mb-2" style="background-color: transparent; color: #0dbdfd; font-size: 1rem; border-radius: 1.5rem; border: 2px solid #0dbdfd; padding: 0.5rem 1rem; text-align: center;">Вернуться назад</a>
