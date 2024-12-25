@@ -12,6 +12,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show position-fixed bottom-0 end-0 m-3" style="z-index: 1050; width: 300px;" role="alert" id="success-alert">
+                {{ session('success') }}
+            </div>
+        @endif
+    </div>
    <div class="d-flex flex-column justify-content-between min-vh-100 text-center">
         @include('admin.includes.header')
 

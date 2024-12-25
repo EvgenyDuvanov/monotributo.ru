@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ApplicationController as AdminApplicationController;
 use App\Http\Controllers\Admin\ComboController;
 use App\Http\Controllers\Application\ApplicationController;
 use App\Http\Controllers\HomeController;
@@ -40,7 +41,8 @@ Route::middleware(['auth:admin'])->group(function () {
     Route::prefix('admin/combos')->group(function () {
         Route::get('/', [ComboController::class, 'index'])->name('admin.combos');
         Route::get('/edit/{id}', [ComboController::class, 'edit'])->name('admin.combos.edit');
-        // Route::put('/update/{id}', )
+        Route::put('/update/{id}', [ComboController::class, 'update'])->name('admin.combos.update');
+        Route::delete('/destroy/{id}', [ComboController::class, 'destroy'])->name('admin.combos.destroy');
     });
 
     Route::prefix('admin/services')->group(function () {
@@ -59,7 +61,11 @@ Route::middleware(['auth:admin'])->group(function () {
 
     // Управление заявками
     Route::prefix('admin/applications')->group(function () {
-        Route::get('/', [AdminController::class, 'indexApplications'])->name('admin.applications');
+        Route::get('/', [AdminApplicationController::class, 'index'])->name('admin.applications');
+        Route::get('/edit/{id}', [AdminApplicationController::class, 'edit'])->name('admin.applications.edit');
+        Route::put('/update/{id}', [AdminApplicationController::class, 'update'])->name('admin.applications.update');
+        Route::delete('/applications/{id}', [AdminApplicationController::class, 'destroy'])->name('admin.applications.destroy');
+
     });
 
     // Управление FAQ

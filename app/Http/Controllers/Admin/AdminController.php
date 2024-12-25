@@ -16,11 +16,6 @@ class AdminController extends Controller
         return view('admin.reviews.index');
     }
 
-    public function indexApplications()
-    {
-        return view('admin.applications.index');
-    }
-
     public function indexContacts()
     {
         return view('admin.contacts.index');
