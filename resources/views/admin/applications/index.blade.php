@@ -12,7 +12,7 @@
                     <th scope="col">Имя</th>
                     <th scope="col" class="d-none d-md-table-cell">Email</th> <!-- Скрывается на мобильных -->
                     <th scope="col" class="d-none d-md-table-cell">Телефон</th> <!-- Скрывается на мобильных -->
-                    <th scope="col">Статус</th> <!-- Статус теперь виден на мобильных версиях -->
+                    <th scope="col" class="d-none d-md-table-cell">Статус</th> <!-- Скрывается на мобильных -->
                     <th scope="col" class="d-none d-md-table-cell">Комментарий</th> <!-- Скрывается на мобильных -->
                     <th scope="col">Дата заявки</th>
                     <th scope="col">Действия</th>
@@ -26,13 +26,12 @@
                         <td>{{ $application->name }}</td>
                         <td class="d-none d-md-table-cell">{{ $application->email }}</td> <!-- Скрывается на мобильных -->
                         <td class="d-none d-md-table-cell">{{ $application->phone }}</td> <!-- Скрывается на мобильных -->
-                        <td>
+                        <td class="d-none d-md-table-cell">
                             @php
                                 $status = $statuses[$application->status] ?? ['label' => 'Неизвестно', 'class' => 'badge bg-secondary'];
                             @endphp
-                            <span class="d-md-none {{ $status['class'] }}">{{ $status['label'] }}</span> <!-- Статус будет виден и на мобильных -->
-                            <span class="d-none d-md-inline-block {{ $status['class'] }}">{{ $status['label'] }}</span>
-                        </td>
+                            <span class="{{ $status['class'] }}">{{ $status['label'] }}</span>
+                        </td> <!-- Скрывается на мобильных -->
                         <td class="d-none d-md-table-cell">
                             <span class="text-truncate" style="max-width: 200px; display: inline-block;" title="{{ $application->comment }}">
                                 {{ Str::limit($application->comment, 30, '...') }}
