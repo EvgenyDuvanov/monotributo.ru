@@ -43,6 +43,6 @@ class ReviewController extends Controller
             'photo' => $photoPath,
         ]);
 
-        return redirect()->route('reviews.index')->with('success', 'Спасибо! Ваш будет опубликован в ближайшее время!');
+        return redirect(url('/#reviews'))->with('success', 'Спасибо! Ваш отзыв будет опубликован в ближайшее время!');
     }
 }
