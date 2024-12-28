@@ -28,7 +28,7 @@
     </div>
     <div class="text-center mt-4">
         <a href="/#rewiew" class="btn mb-2" style="background-color: transparent; color: #0dbdfd; font-size: 1rem; border-radius: 1.5rem; border: 2px solid #0dbdfd; padding: 0.5rem 1rem; text-align: center;">Вернуться назад</a>
-        <a href="#" class="btn mb-2" style="background-color: #0dbdfd; color: white; font-size: 1rem; border-radius: 1.5rem; border: none; padding: 0.5rem 1rem; text-align: center;">Хочу оставить свой отзыв!</a>
+        <a href="{{ route('reviews.create') }}" class="btn mb-2" style="background-color: #0dbdfd; color: white; font-size: 1rem; border-radius: 1.5rem; border: none; padding: 0.5rem 1rem; text-align: center;">Оставить отзыв!</a>
     </div>
 </div>
 

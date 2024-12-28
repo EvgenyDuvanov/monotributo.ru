@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::post('/applications', [ApplicationController::class, 'store'])->name('applications.store');
 Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews.index');
+Route::get('/reviews/create', [ReviewController::class, 'create'])->name('reviews.create');
+Route::post('/reviews/store', [ReviewController::class, 'store'])->name('reviews.store');
 
 Route::prefix('admin')->group(function () {
     Route::get('/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
